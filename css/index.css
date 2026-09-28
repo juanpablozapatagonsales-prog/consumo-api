@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f5fb;
+    color: #2b2f3a;
+}
+
+.encabezado {
+    background: linear-gradient(135deg, #3b82f6, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+}
+
+.encabezado p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-txt  { background: #f97316; }
+.btn-json { background: #8b5cf6; }
+.btn-api  { background: #0ea5e9; }
+
+/* Resultado */
+#resultado {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vacio, .cargando, .error {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px;
+}
+
+.error {
+    color: #dc2626;
+}
+
+/* Grid de tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #ccc;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin: 12px 0 4px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Colores por tipo */
+.card-txt  { border-top-color: #f97316; }
+.card-json { border-top-color: #8b5cf6; }
+.card-api  { border-top-color: #0ea5e9; }
+
+/* Círculo con número o inicial */
+.circulo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-txt  .circulo { background: #f97316; }
+.card-json .circulo { background: #8b5cf6; }
+.card-api  .circulo { background: #0ea5e9; }
+
+.etiqueta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: #eef2ff;
+    color: #4338ca;
+}
+.foto {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.ver {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.ver:hover {
+    background: #0284c7;
+}
